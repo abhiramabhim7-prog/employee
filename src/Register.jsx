@@ -8,7 +8,7 @@ function Register() {
             gender: "Male",
             age: "28",
             email: "arun@gmail.com",
-            phone: 808080808,
+            phone: 808080898808,
             department: "IT",
             position: "Developer",
             salary: "30000",
