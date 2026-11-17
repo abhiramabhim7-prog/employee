@@ -1,0 +1,432 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  background-color: rgb(244, 246, 251);
+  height: 1200px;
+  
+}
+
+.header{
+  padding: 30px;
+  font-size: 13px;
+}
+
+.header>h1{
+  color: rgb(0, 187, 200);
+}
+
+.header>p{
+  color: rgb(174, 174, 174);
+  font-size:large ;
+  padding-top: 8px;
+  font-size:16px;
+}
+
+.status{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Blue background layer */
+
+.total-status {
+  padding: 20px;
+  width: 30vw;
+  border-left: 5px solid rgb(68, 192, 192);
+  border-radius: 10px;
+  background-color: white;
+  background-image: linear-gradient(to right, rgb(70, 195, 195), rgb(127, 239, 239));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s ease;
+}
+
+
+
+.total-status:hover {
+  background-size: 100% 100%;
+}
+
+
+.total-status::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(20, 20, 229);
+  transition: width 0.5s ease;
+  z-index: -1;
+  
+}
+
+/* Hover effect */
+.total-status:hover::before {
+  width: 100%;
+  color:black;
+}
+
+
+.total-male{
+  padding: 20px;
+  width: 30vw;
+  border-left: 5px solid rgb(14, 165, 233);
+  border-radius: 10px;
+  background-color: white;
+   background-image: linear-gradient(to right, rgb(14, 165, 233), rgb(115, 200, 240));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s ease;
+}
+
+.total-male:hover {
+  background-size: 100% 100%;
+}
+
+
+.total-male::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(20, 20, 229);
+  transition: width 0.5s ease;
+  z-index: -1;
+  
+}
+
+/* Hover effect */
+.total-male:hover::before {
+  width: 100%;
+  color:black;
+}
+
+.total-female{
+  padding: 20px;
+  width: 30vw;
+  border-left: 5px solid rgb(212, 158, 142);
+  border-radius: 10px;
+  background-color: white;
+   background-image: linear-gradient(to right, rgb(212, 158, 142), rgb(252, 222, 213));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s ease;
+}
+
+.total-female:hover {
+  background-size: 100% 100%;
+}
+
+
+.total-female::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(20, 20, 229);
+  transition: width 0.5s ease;
+  z-index: -1;
+  
+}
+
+/* Hover effect */
+.total-female:hover::before {
+  width: 100%;
+  color:black;
+}
+
+
+h2{
+  padding: 10px 0px 10px 0px;
+  font-size: xx-large;
+  
+}
+
+p{
+  color: gray;
+}
+
+span{
+  color: grey;
+  font-size: small;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.dis>h2{
+  font-size:25px;
+}
+
+.searchbar{
+  display: flex;
+  gap: 20px;
+}
+
+.searchbar>input{
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 20vw;
+}
+.searchbar>button{
+  padding: 10px;
+  font-size: 15px;
+  background-color: blue;
+  color: white;
+  border:3px solid white;
+  border-radius: 8px;
+}
+
+.formCard{
+  background-color: white;
+}
+
+.formHeading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+.formHeading h2{
+  font-size: 25px;
+ 
+}
+.formHeading button{
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  border: transparent;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid label{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.grid input{
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid grey;
+}
+
+.action{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding: 30px;
+}
+
+select#gender {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.action .cancel{
+    padding: 13px;
+    width: 80px;
+    border-radius: 8px;
+    border: 1px solid rgb(181, 181, 181);
+    background-color: white;
+    font-size: 15px;
+
+}
+.action .save{
+    border-radius: 8px;
+    width: 140px;
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+.formCard{
+  padding: 30px;
+}
+
+
+
+.table {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.table table {
+  width: 100%;
+  min-width: 900px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 20px 10px;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+.table thead {
+  background-color: rgb(248, 250, 252);
+}
+
+.table th {
+  color: rgb(73, 72, 72);
+  font-size: 15px;
+  font-weight: normal;
+  border-bottom: 1px solid rgb(170, 165, 165);
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 6%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 12%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 10%;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 16%;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 12%;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 11%;
+}
+
+.table th:nth-child(7),
+.table td:nth-child(7) {
+  width: 12%;
+}
+
+.table th:nth-child(8),
+.table td:nth-child(8) {
+  width: 8%;
+}
+
+.table th:nth-child(9),
+.table td:nth-child(9) {
+  width: 13%;
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.table tbody tr:hover{
+  background-color: rgb(234, 241, 251);
+}
+
+.table tbody td button + button {
+  margin-left: 6px;
+  padding: 7px;
+  border-radius: 5px;
+  border:none;
+  background: transparent;
+  background-color: rgb(254, 226, 226);
+  color: rgb(207, 26, 26);
+}
+
+button.edit {
+   padding: 7px;
+  border-radius: 5px;
+  border:none;
+  background: transparent;
+  background-color: rgb(206, 226, 254);
+  color: rgb(18, 114, 239);
+}
+
+.table tbody td:nth-child(2) button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.details{
+  padding: 30px;
+   background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.dthead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  font-size: small;
+  padding-left: 0;
+  
+}
+
+.grid p {
+  padding-bottom: 10px;
+}
+
+.grid h4{
+  font-size: 14px;
+}
+
+.dthead button{
+  height: 38px;
+  width: 38px;
+  border: none;
+  border-radius: 5px;
+}
